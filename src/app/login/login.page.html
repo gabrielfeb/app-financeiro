@@ -1,28 +1,28 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="primary">
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
     </ion-buttons>
-    <ion-title>Banco XPTO - As taxas mais altas para você!</ion-title>
+    <ion-title>Green Bank</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <form>
     <ion-item lines="full">
-      <ion-label position="floating">Número da Conta</ion-label>
+      <ion-label position="floating">número da conta</ion-label>
       <ion-input type="text" required></ion-input>
     </ion-item>
 
     <ion-item lines="full">
-      <ion-label position="floating">Senha</ion-label>
+      <ion-label position="floating">senha eletrônica</ion-label>
       <ion-input type="password" required></ion-input>
     </ion-item>
 
     <ion-row>
       <ion-col>
-        <ion-button type="submit" color="danger" expand="block">Acessar</ion-button>
-        <a [routerLink]="['/forgot-password']" class="small-text">Esqueceu a senha? Se fudeu</a>
+        <ion-button type="submit" color="secondary" expand="block">Acessar</ion-button>
+        <a [routerLink]="['/forgot-password']" class="small-text">Esqueci a minha senha</a>
       </ion-col>
     </ion-row>
   </form>
