@@ -1,0 +1,40 @@
+<ion-header class="page-headers">
+  <ion-toolbar>
+    <ion-title class="identificacao">
+      <ion-text>
+        Olá, xxx
+      </ion-text>
+      </ion-title >
+      <ion-title class = "saldo">
+        <ion-text>
+          SALDO
+        </ion-text>
+      </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+  <ion-content class="conteudo">
+
+    <ion-list *ngFor="let item of items">
+      <ion-item>
+        <ion-avatar slot="start" class="avatar">
+          <img src="https://images.pexels.com/photos/1666067/pexels-photo-1666067.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+        </ion-avatar>
+        <ion-label>
+          {{item}}
+          <br>
+        <h6> Local da compra </h6>
+        </ion-label>
+
+      </ion-item>
+
+      </ion-list>
+
+    <ion-infinite-scroll threshold="100px" (ionInfinite)="loadData($event)">
+      <ion-infinite-scroll-content
+        loadingSpinner="bubbles"
+        loadingText="Loading more data...">
+      </ion-infinite-scroll-content>
+    </ion-infinite-scroll>
+  </ion-content>
+
