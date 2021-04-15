@@ -1,3 +1,44 @@
 <ion-app>
   <ion-router-outlet></ion-router-outlet>
 </ion-app>
+
+<!--As tabs não devem aparecer na página home, login e forgot password-->
+<!--Precisa fazer o routing após todas as páginas estarem criadas-->
+<ion-content [fullscreen]="true">
+
+  <ion-tabs>
+    <ion-tab-bar color="secondary">
+      <!--cotacao-->
+      <ion-tab-button tab="cotacao" color="light">
+        <ion-icon name="logo-euro"></ion-icon>
+        <ion-label>Cotação</ion-label>
+      </ion-tab-button>
+
+      <!--transferencia-->
+      <ion-tab-button tab="transferencia" color="light">
+        <ion-icon name="repeat"></ion-icon>
+        <ion-label>Transferência</ion-label>
+      </ion-tab-button>
+
+      <!--extrato-->
+      <ion-tab-button tab="extrato" color="light">
+        <ion-icon name="list"></ion-icon>
+        <ion-label>Extrato</ion-label>
+      </ion-tab-button>
+
+      <!--Dados da Conta-->
+      <ion-tab-button tab="dadosconta" color="light"> 
+        <ion-icon name="menu"></ion-icon>
+        <ion-label>Meus Dados</ion-label>
+      </ion-tab-button>
+
+      <!--Fale Conoso-->
+      <ion-tab-button tab="faleconosco" color="light">
+        <ion-icon name="at"></ion-icon>
+        <ion-label>Fale Conosco</ion-label>
+      </ion-tab-button>
+
+    </ion-tab-bar>
+  </ion-tabs>
+
+</ion-content>
