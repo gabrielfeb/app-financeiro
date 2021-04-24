@@ -1,0 +1,22 @@
+ion-content ion-toolbar {
+    --background: translucent;
+  }
+  
+  .page-headers {
+    --ion-background-color: rgb(0, 118, 106);
+  }
+  
+  .page-headers ion-title {
+    color: white;
+    font-weight: bold;
+  }
+  .page-text {
+    --ion-background-color:rgb(0, 118, 106);
+  }
+  .page-text ion-button {
+    color: white;
+    font-weight: bold
+  }
+  ion-col {
+    border: rgb(69, 184, 169);
+  }
