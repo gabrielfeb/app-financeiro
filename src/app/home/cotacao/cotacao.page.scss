@@ -1,0 +1,35 @@
+#body-container {
+  --ion-background-color:#F0F0F0;
+}
+
+.currency-container .currency-label {
+  font-weight: bold;
+  letter-spacing: 0.3px;
+  color: rgb(0,161,130);
+}
+
+.currency-container ion-item,
+.currency-container ion-input {
+  margin-top: 0.5rem;
+  border: 1px solid rgb(69,184,169);
+  border-radius: 2px;
+}
+
+.currency-container ion-input {
+  color: rgb(69,184,169);
+}
+
+ion-select {
+  color: rgb(69,184,169);
+  width: 100%;
+}
+
+.page-headers {
+  --ion-background-color: rgb(0, 118, 106);
+}
+
+.page-headers ion-title {
+  color: white;
+  font-weight: bold;
+}
+

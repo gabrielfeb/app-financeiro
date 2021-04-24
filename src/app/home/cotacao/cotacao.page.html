@@ -1,9 +1,33 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>cotacao</ion-title>
+<ion-header [translucent]="true">
+  <ion-toolbar class="page-headers">
+    <ion-title>Cotação</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
- Você está na cotação
+<ion-content id="body-container">
+  <img src="../../assets/aliquotaIOF.jpg" alt=""/>
+  <div class="currency-container">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-label class="currency-label">Valor</ion-label>
+          <ion-input></ion-input>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-label class="currency-label">Moeda</ion-label>
+          <ion-item>
+            <ion-select placeholder="Selecione uma moeda" interface="popover">
+              <ion-select-option value="Euro">Euro</ion-select-option>
+              <ion-select-option value="Dólar">Dólar americano</ion-select-option>
+              <ion-select-option value="Libra">Libra</ion-select-option>
+              <ion-select-option value="Iene">Iene japonês</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </div>
 </ion-content>
