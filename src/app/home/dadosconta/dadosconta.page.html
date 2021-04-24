@@ -1,9 +1,30 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>dadosconta</ion-title>
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>
+      Dados da Conta
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  Você está na dados da conta
+  <ion-item>
+    <ion-label><h1>Nome:</h1></ion-label>
+    <ion-input postion=fixed value="Lucas Pereira"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label><h1>Senha:</h1></ion-label>
+    <ion-input value="********"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label><h1>Email:</h1></ion-label>
+    <ion-input value="lucaspereira2702@gmail.com"></ion-input>
+  </ion-item>
+
+<ion-item>
+  <ion-label><h1>Telefone:</h1></ion-label>
+  <ion-input value="(11)99925-4808"></ion-input>
+</ion-item>
+
 </ion-content>
