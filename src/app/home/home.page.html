@@ -1,23 +1,59 @@
 <ion-header>
   <ion-toolbar color="primary">
     <ion-title>
-      Green Bank - Seja Bem Vindo!
+      Green Bank
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-card>
-  <img src="https://blog.focalweb.com.br/wp-content/uploads/2017/10/banking-background-design_1223-54.jpg">
-</ion-card>
+<ion-content [fullscreen]="true">
 
-<ion-content class="auth-form">
-  <ion-grid>
-    <ion-row>
-      <ion-col align-self-center>
-        <ion-button [routerLink]="['/login']" expand="block" color="secondary">Acessar a sua conta</ion-button>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
+  <ion-card>
+    <img src="https://s2.glbimg.com/mBdu7y0sX_cbKnieGIleTst1ADY=/0x0:825x619/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2020/u/n/83nNsCQ8SWRrziGD1mAw/stonks-meme.png" />
+    <ion-card-header>
+      <ion-card-subtitle>Seja Bem Vindo,</ion-card-subtitle>
+      <ion-card-title>Cleitinho Rasta</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Segundo um estudo da XP Investimentos, ações de alguns setores tendem a se valorizar com aumentos graduais da Selic, a taxa básica de juros.
+      Quer entender por que isso ocorre e quais papéis podem ter melhores desempenhos com a Selic em 2,75%? 
+      Siga @GreenBank no instagram!
+    </ion-card-content>
+  </ion-card>
+
+  <ion-tabs>
+    <ion-tab-bar color="secondary">
+      <!--cotacao-->
+      <ion-tab-button tab="cotacao" color="light">
+        <ion-icon name="logo-euro"></ion-icon>
+        <ion-label>Cotação</ion-label>
+      </ion-tab-button>
+
+      <!--transferencia-->
+      <ion-tab-button tab="transferencia" color="light">
+        <ion-icon name="repeat"></ion-icon>
+        <ion-label>Transferência</ion-label>
+      </ion-tab-button>
+
+      <!--extrato-->
+      <ion-tab-button tab="extrato" color="light">
+        <ion-icon name="list"></ion-icon>
+        <ion-label>Extrato</ion-label>
+      </ion-tab-button>
+
+      <!--Dados da Conta-->
+      <ion-tab-button tab="dadosconta" color="light"> 
+        <ion-icon name="menu"></ion-icon>
+        <ion-label>Meus Dados</ion-label>
+      </ion-tab-button>
+
+      <!--Fale Conoso-->
+      <ion-tab-button tab="faleconosco" color="light">
+        <ion-icon name="at"></ion-icon>
+        <ion-label>Fale Conosco</ion-label>
+      </ion-tab-button>
+
+    </ion-tab-bar>
+  </ion-tabs>
   
 </ion-content>
-
