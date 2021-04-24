@@ -1,15 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { NavController } from '@ionic/angular';
 
 @Component({
-  selector: 'app-transferencia',
-  templateUrl: './transferencia.page.html',
-  styleUrls: ['./transferencia.page.scss'],
+  selector: 'transferencia',
+  templateUrl: 'transferencia.page.html',
+  styleUrls: ['transferencia.page.scss']
 })
-export class TransferenciaPage implements OnInit {
+export class TransferenciaPage {
 
-  constructor() { }
+public cash = 0.00;
+public transfer = 0
 
-  ngOnInit() {
-  }
+public decrement (){
+  this.cash -=this.transfer;
+}
 
 }
+

@@ -1,9 +1,25 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>transferencia</ion-title>
+<ion-header [translucent]="true">
+  <ion-toolbar class="page-headers">
+    <ion-title>
+      Transferência
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  Você está na transferência
+  <h1 style="margin-left: 10px; color:rgb(69, 184, 169)">Saldo Disponível : R$
+    <ion-text> {{ cash }} </ion-text>
+  </h1>
+  <p style="margin-left: 10px;">Conta</p>
+  <ion-item>
+    <ion-input placeholder="Digite o número da conta"></ion-input>
+  </ion-item>
+  <p style="margin-left: 10px;">Valor</p>
+  <ion-item>
+    <ion-input [(ngModel)]="transfer" type="number"> </ion-input>
+  </ion-item>
+
+  <ion-list style="text-align:center">
+    <ion-button (click)="decrement()" style="color: white;">CONFIRMAR</ion-button>
+  </ion-list>
 </ion-content>
