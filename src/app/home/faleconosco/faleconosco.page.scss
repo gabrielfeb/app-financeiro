@@ -1,0 +1,23 @@
+#body-container {
+  --ion-background-color:#F0F0F0;
+}
+
+.titulo{
+  font-weight: bold;
+  letter-spacing: 0.3px;
+  color: rgb(0,161,130);
+  text-align: center;
+}
+
+.page-headers {
+  --ion-background-color: rgb(0, 118, 106);
+}
+
+.page-headers ion-title {
+  color: white;
+  font-weight: bold;
+}
+.ion-padding{
+  color: rgb(0,161,130);
+
+}
