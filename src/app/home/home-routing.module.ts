@@ -8,6 +8,10 @@ const routes: Routes = [
     component: HomePage,
     children : [
       {
+        path: 'home',
+        loadChildren: () => import('./home.module').then(m => m.HomePageModule)
+      },
+      {
         path: 'cotacao',
         loadChildren: () => import('./cotacao/cotacao.module').then( m => m.CotacaoPageModule)
       },
