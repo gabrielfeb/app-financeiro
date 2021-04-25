@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-faleconosco',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FaleconoscoPage implements OnInit {
 
-  constructor() { }
+  constructor(private alertCtrl: AlertController) { }
 
   ngOnInit() {
   }
+  async showAlerta(){
+    const alerta = await this.alertCtrl.create({
+      header: 'MENSAGEM ENVIADA',
+      message:'Obrigada por nos contatar, Retornaremos o mais breve possível! \n GREEN BANK',
+      buttons:['OK']
+    });
 
+    alerta.present();
+  }
 }
