@@ -1,0 +1,54 @@
+<ion-header class="page-headers">
+  
+</ion-header>
+
+<ion-content>
+
+    <ion-item class="page-headers">
+      <ion-toolbar>
+        <ion-title class="identificacao">
+          <ion-text>
+            Olá, Professor
+          </ion-text>
+          </ion-title >
+          <ion-title class = "saldo">
+            <ion-text>
+              R$ 1.000,00
+            </ion-text>
+          </ion-title>
+      </ion-toolbar>
+    </ion-item>
+
+  <ion-item class="conteudo">
+      <ion-select placeholder = "Mês">
+        <ion-select-option value="01">Janeiro</ion-select-option>
+        <ion-select-option value="02">Fevereiro</ion-select-option>
+        <ion-select-option value="03">Março</ion-select-option>
+        <ion-select-option value="04">Abril</ion-select-option>
+        <ion-select-option value="05">Maio</ion-select-option>
+        <ion-select-option value="06">Junho</ion-select-option>
+        <ion-select-option value="07">Julho</ion-select-option>
+        <ion-select-option value="08">Agosto</ion-select-option>
+        <ion-select-option value="09">Setembro</ion-select-option>
+        <ion-select-option value="10">Outubro</ion-select-option>
+        <ion-select-option value="11">Novembro</ion-select-option>
+        <ion-select-option value="12">Dezembro</ion-select-option>
+      </ion-select>
+    </ion-item>
+    
+    <ion-content> 
+    <ion-list *ngFor="let item of items">
+      <ion-item>
+        <ion-avatar slot="start" class="avatar">
+          <img src="https://images.pexels.com/photos/1666067/pexels-photo-1666067.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+        </ion-avatar>
+        <ion-label>
+          {{item}}
+          <br>
+        <h6> Local da compra </h6>
+        </ion-label>
+      </ion-item>
+      </ion-list>
+    </ion-content>
+</ion-content>
+

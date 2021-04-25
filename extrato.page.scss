@@ -1,0 +1,40 @@
+.identificacao{
+    text-align: end;
+    color:white;
+    padding-inline-end: 15px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    font-size: medium;
+    font-weight: bold;
+  }
+  
+  .saldo{
+    text-align: end;
+    padding-inline-end: 15px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    font-size: xx-large;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .conteudo{
+    --padding-end:10px;
+    --padding-top: 15px;
+    text-align: left;
+  }
+  
+  .avatar{
+    --border-radius: 5px;
+  }
+  
+  .page-headers {
+      padding-top: 25px;
+    --ion-background-color: rgb(0, 118, 106);
+  }
+  
+  .page-headers ion-title {
+    color: white;
+    font-weight: bold;
+  }
+  
