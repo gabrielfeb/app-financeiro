@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CotacaoPage implements OnInit {
 
+  public countdown;
   constructor() { }
 
   ngOnInit() {
+
+  }
+
+  ionViewWillLoad() {
+    this.countdown = 30;
+  }
+
+  public setCountdown() {
+
   }
 
 }
