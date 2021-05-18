@@ -8,8 +8,9 @@ import { NavController } from '@ionic/angular';
 })
 export class TransferenciaPage {
 
-public cash = 0.00;
-public transfer = 0
+public cash = 10000;
+public transfer = 0;
+public conta = ''
 
 public decrement (){
   this.cash -=this.transfer;
