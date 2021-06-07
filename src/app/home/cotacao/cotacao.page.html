@@ -12,11 +12,11 @@
         <ion-col>
           <ion-label class="currency-label">Moeda</ion-label>
           <ion-item>
-            <ion-select placeholder="Selecione uma moeda" interface="popover">
-              <ion-select-option value="Euro">Euro</ion-select-option>
-              <ion-select-option value="Dólar">Dólar americano</ion-select-option>
-              <ion-select-option value="Libra">Libra</ion-select-option>
-              <ion-select-option value="Iene">Iene japonês</ion-select-option>
+            <ion-select ([ngModel])="selectedCurrency" (ionChange)="selectCurrency($event)" placeholder="Selecione uma moeda" interface="popover">
+              <ion-select-option value="EUR">Euro</ion-select-option>
+              <ion-select-option value="USD">Dólar americano</ion-select-option>
+              <ion-select-option value="GBP">Libra</ion-select-option>
+              <ion-select-option value="JPY">Iene japonês</ion-select-option>
             </ion-select>
           </ion-item>
         </ion-col>
@@ -24,16 +24,15 @@
       <br/>
       <ion-row>
         <ion-col>
-          <ion-label class="quote-label">Euro</ion-label>
+          <ion-label id="quote-name" class="quote-label"></ion-label>
         </ion-col>
         <ion-col class="countdown-col">
-          <ion-label class="countdown-label">Atualização em: </ion-label>
-          <span class="countdown">30s</span>
+          <ion-button class="update-button" (click)="updateCurrency()" color="light">Atualizar</ion-button>
         </ion-col>
       </ion-row>
       <ion-row>
         <ion-col>
-          <div class="quote-value">€ 999,99</div>
+          <div id="quote" class="quote-value"></div>
         </ion-col>
       </ion-row>
     </ion-grid>
