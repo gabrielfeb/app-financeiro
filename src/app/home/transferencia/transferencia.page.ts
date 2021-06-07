@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from '@ionic/angular';
+import { AlertController, NavController } from '@ionic/angular';
 
 @Component({
   selector: 'transferencia',
@@ -16,5 +16,19 @@ public decrement (){
   this.cash -=this.transfer;
 }
 
+constructor(private alertCtrl: AlertController) { }
+
+ngOnInit() {
 }
+async showAlerta(){
+  const alerta = await this.alertCtrl.create({
+    header: 'TRANSFERÊNCIA REALIZADA COM SUCESSO',
+    message:'SEU DINHEIRO SERÁ ENVIADO EM ATÉ 24H',
+    buttons:['OK']
+  });
+
+  alerta.present();
+}
+}
+
 
