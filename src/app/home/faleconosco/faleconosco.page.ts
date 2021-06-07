@@ -15,7 +15,7 @@ export class FaleconoscoPage implements OnInit {
   async showAlerta(){
     const alerta = await this.alertCtrl.create({
       header: 'MENSAGEM ENVIADA',
-      message:'Obrigada por nos contatar, Retornaremos o mais breve possível! \n GREEN BANK',
+      message:'O GREEN BANK agradece pelo contato, retornaremos o mais breve possível!',
       buttons:['OK']
     });
 
