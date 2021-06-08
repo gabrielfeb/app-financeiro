@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar class="page-headers">
     <ion-title>
-      Transferências
+      Transferência
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -10,20 +10,33 @@
   <h1 style="margin-left: 10px; color:rgb(69, 184, 169)">Saldo Disponível : R$
     <ion-text> {{ cash }} </ion-text>
   </h1>
+  <p style="margin-left: 10px;">Destinatário</p>
+  <ion-item>
+    <ion-input #variable type='text' (change) = 'nome($event.target.value)' placeholder = "nome ou apelido"></ion-input>
+  </ion-item>
+  <p style="margin-left: 10px;">Conta</p>
+  <ion-item>
+    <ion-input #variable2 type = 'text' (change) = 'conta($event.target.value)' placeholder="Digite o número da conta" id = 'conta'></ion-input>
+  </ion-item>
+  <p style="margin-left: 10px;">Valor</p>
+  <ion-item>
+    <ion-input #variable3 [(ngModel)]="transfer" type="number"> </ion-input>
+  </ion-item>
 
-  <ion-list>
-    <ion-item>
-      <ion-label position="floating">Conta</ion-label>
-      <ion-input type="number" [(ngModel)]="conta">
-      </ion-input>
+  <ion-list style="text-align:center">
+    <ion-button (click)="decrement(variable, variable2, variable3)" (click) = "salvar()" style="color: white;" >CONFIRMAR</ion-button>
+    <ion-button (click)="pegar()" style="color: white;" >ÚLTIMA CONTA INSERIDA</ion-button> 
 
-    </ion-item>
+    <ion-list>
+      <br>
+      {{g}}
+      <br>
+      {{d}}
+      <br>
+     {{e}}
+    </ion-list>
 
-    <ion-item>
-      <ion-label position="floating">Valor</ion-label>
-      <ion-input type="number" [(ngModel)]="transfer"> </ion-input>
-    </ion-item>
+
+
   </ion-list>
-
-  <ion-button (click)="decrement()"(click)="showAlerta()" expand="block" shape="round" type="submit">CONFIRMAR</ion-button>
-
+</ion-content>
