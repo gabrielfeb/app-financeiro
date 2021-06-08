@@ -27,12 +27,12 @@ export class TransferenciaPage {
     this.storage.create();
   }
 
-  nome(nome: String){
-    this.n = nome;
+  nome(nome){
+    this.n = nome.target.value;
   }
 
-  conta(conta: String){
-    this.c = conta;
+  conta(conta){
+    this.c = conta.target.value;
   }
 
 

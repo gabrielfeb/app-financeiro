@@ -12,11 +12,11 @@
   </h1>
   <p style="margin-left: 10px;">Destinatário</p>
   <ion-item>
-    <ion-input #variable type='text' (change) = 'nome($event.target.value)' placeholder = "nome ou apelido"></ion-input>
+    <ion-input #variable type='text' (change) = 'nome($event)' placeholder = "nome ou apelido"></ion-input>
   </ion-item>
   <p style="margin-left: 10px;">Conta</p>
   <ion-item>
-    <ion-input #variable2 type = 'text' (change) = 'conta($event.target.value)' placeholder="Digite o número da conta" id = 'conta'></ion-input>
+    <ion-input #variable2 type = 'text' (change) = 'conta($event)' placeholder="Digite o número da conta" id = 'conta'></ion-input>
   </ion-item>
   <p style="margin-left: 10px;">Valor</p>
   <ion-item>
